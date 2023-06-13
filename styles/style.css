@@ -1,0 +1,17 @@
+/*font-family: 'Cormorant Infant', serif;
+font-family: 'Slabo 13px', serif;*/
+
+body {
+  color: red;
+}
+
+h1 {
+  font-family: "Cormorant Infant", serif;
+  font-size: 72px;
+  font-weight: bold;
+}
+
+p {
+  font-family: "Slabo 13px", serif;
+  font-weight: normal;
+}
