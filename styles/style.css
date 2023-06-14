@@ -14,12 +14,38 @@ body {
 
 h1,
 h2,
-h3,
 h4,
-h5,
 h6 {
   font-family: var(--heading-font-family);
   font-style: italic;
+}
+
+h1 {
+  font-size: 96px;
+}
+
+h2 {
+  font-size: 64px;
+  font-weight: bold;
+  color: #3f3f3f;
+}
+
+h3 {
+  font-family: var(--default-font-family);
+  font-size: 48px;
+}
+
+h4 {
+  font-family: var(--default-font-family);
+  font-size: 24px;
+  font-style: normal;
+  color: #272142;
+}
+
+h5 {
+  font-family: var(--default-font-family);
+  font-size: 24px;
+  font-weight: bold;
 }
 
 p {
@@ -32,27 +58,6 @@ p {
   background: var(--secondary-color);
   text-align: center;
   padding: 120px 20px;
-}
-
-h1 {
-  font-size: 96px;
-}
-
-h2 {
-  font-size: 64px;
-}
-
-.hero p {
-  font-family: var(--heading-font-family);
-  font-size: 36px;
-  color: #272142;
-}
-
-.hero h2 {
-  font-family: var(--default-font-family);
-  font-size: 24px;
-  font-style: normal;
-  color: #272142;
 }
 
 .btn-branding {
@@ -71,18 +76,108 @@ h2 {
   padding: 18px 30px;
 }
 
-.project-description {
-  padding: 60px 20px;
+.container {
+  padding: 0px 80px;
+}
+
+.content-container {
+  padding: 5px 10px;
+}
+
+.content-container h3 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.content-container p {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.logo {
+  max-height: 40px;
+  margin: 3px;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 50px;
+  padding: 0px 5px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+nav a:hover {
+  color: var(--branding-color);
+  transition: all 100ms ease-in-out;
+}
+
+nav li.active a {
+  color: var(--branding-color);
+}
+
+footer li {
+  display: inline;
+  list-style: none;
+  line-height: 50px;
+  padding: 0px 5px;
+}
+
+.social-links {
+  font-size: 30px;
+  line-height: 50px;
+  margin: 20px 0;
+}
+
+.social-links a {
+  padding: 15px 18px;
+  color: #272142;
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+}
+
+.social-links a:hover {
+  color: var(--branding-color);
+  transition: all 100ms ease-in-out;
 }
 
 @media (max-width: 960px) {
   h1 {
     font-size: 60px;
   }
+
   h2 {
-    font-size: 40px;
+    font-size: 48px;
   }
-  .project-description {
-    padding: 20px;
+
+  h3 {
+    font-size: 30px;
+  }
+
+  .container {
+    padding: 0px;
+  }
+
+  .content-container {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .about-img {
+    display: block;
+    text-align: center;
+  }
+
+  nav {
+    padding: 5px;
   }
 }
