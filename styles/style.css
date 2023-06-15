@@ -143,7 +143,7 @@ nav li.active a {
 
 .social-links a {
   padding: 15px 20px;
-  margin: auto 20px;
+  margin: 0 20px;
   color: #272142;
   background-color: var(--secondary-color);
   border-radius: 50%;
@@ -161,6 +161,7 @@ nav li.active a {
 
   h2 {
     font-size: 48px;
+    text-align: center;
   }
 
   h3 {
